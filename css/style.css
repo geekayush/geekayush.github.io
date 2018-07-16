@@ -1,0 +1,200 @@
+@font-face {
+    font-family: GT-Bold;
+    src: url(../assets/fonts/GT-Walsheim-Bold.woff);
+}
+
+@font-face {
+    font-family: GT-Medium;
+    src: url(../assets/fonts/GT-Walsheim-Medium.woff);
+}
+
+@font-face {
+    font-family: GT-Regular;
+    src: url(../assets/fonts/GT-Walsheim-Regular.woff);
+}
+
+@font-face {
+    font-family: Rage;
+    src: url(../assets/fonts/Rage.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+html {
+    height: 100vh;
+    background-image: url(../assets/images/portfolio2.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body {
+    width: 60%;
+    margin: auto;
+}
+
+.blue {
+    color: #027BFF;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: GT-Regular;
+    color: #17191A;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: GT-Regular;
+    color: #17191A;
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #17191A;
+}
+
+p {
+    font-family: GT-Regular, sans-serif;
+    color: #8F9EA5;
+    opacity: 0.8;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.logo,
+.nav-links {
+    flex: 1;
+}
+
+.logo {
+    font-family: Rage, sans-serif;
+    font-size: 32px;
+    color: #707070;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #707070;
+    border-bottom: 2px solid #fff;
+    transition: all 0.2s;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #027BFF;
+}
+
+.landingL {
+    text-align: right;
+    margin-top: 20vh;
+    margin-right: 30px;
+    z-index: 10;
+}
+
+.landingL p {
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+.landing .hr {
+    height: 3px;
+    width: 100px;
+    opacity: 0.8;
+    background: #027BFF;
+    float: right;
+    margin-top: 10px;
+}
+
+.landingWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    flex: end;
+    margin-left: 15px;
+}
+
+.landingR {
+    margin-top: 12vh;
+    position: relative;
+    right: 50px;
+}
+
+.landingR .portfolio-img {
+    border: 6px solid #fff;
+}
+
+.darkbox {
+    z-index: -1;
+    right: 0;
+    position: absolute;
+    bottom: 50px;
+    width: 50vw;
+    height: 200px;
+    background: #353131;
+}
+
+.mail {
+    float: right;
+    margin-top: 10px;
+}
+
+.mail > a {
+    text-decoration: none;
+    color: #eee;
+    font-family: GT-Medium, sans-serif;
+    display: block;
+    transition: all 0.2s;
+}
+
+.mail a:hover {
+    color: #027BFF;
+}
+
+.mail .iconsR a {
+    float: right;
+    margin-left: 20px;
+    color: #ddd;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+.mail .iconsR a:hover {
+    color: #027BFF;
+}
