@@ -271,7 +271,7 @@ export default function Page() {
 
 			{/* COMMUNITY CONTRIBUTIONS */}
 			<section className="mb-12" id="community-contributions">
-				<h2 className="mb-5 text-3xl font-semibold tracking-tighter">
+				<h2 className="sticky top-0 bg-black z-10 mb-5 text-3xl font-semibold tracking-tighter">
 					Community Contributions
 				</h2>
 				<div className="text-neutral-400 mb-3">
@@ -295,7 +295,7 @@ export default function Page() {
 
 			{/* OPEN SOURCE CONTRIBUTIONS */}
 			<section className="mb-12" id="open-source-contributions">
-				<h2 className="mb-5 text-3xl font-semibold tracking-tighter">
+				<h2 className="sticky top-0 bg-black z-10 mb-5 text-3xl font-semibold tracking-tighter">
 					Open Source Contributions
 				</h2>
 				{openSourceContributions.map((row, rowIndex) => (
@@ -323,7 +323,7 @@ export default function Page() {
 
 			{/* EXPERIENCES */}
 			<section className="mb-12" id="experiences">
-				<h2 className="mb-5 text-3xl font-semibold tracking-tighter">
+				<h2 className="sticky top-0 bg-black z-10 mb-5 text-3xl font-semibold tracking-tighter">
 					Experiences
 				</h2>
 				{experiences.map((experience, index) => (
@@ -371,7 +371,7 @@ export default function Page() {
 
 			{/* VOLUNTEERING */}
 			<section className="mb-12" id="volunteering">
-				<h2 className="mb-5 text-3xl font-semibold tracking-tighter">
+				<h2 className="sticky top-0 bg-black z-10 mb-5 text-3xl font-semibold tracking-tighter">
 					Volunteering
 				</h2>
 				{volunteerings.map((volunteering, index) => (
@@ -405,7 +405,7 @@ export default function Page() {
 
 			{/* PROJECTS */}
 			<section className="mb-12" id="projects">
-				<h2 className="mb-5 text-3xl font-semibold tracking-tighter">
+				<h2 className="sticky top-0 bg-black z-10 mb-5 text-3xl font-semibold tracking-tighter">
 					Projects
 				</h2>
 				{projects.map((project, index) => (
@@ -447,7 +447,7 @@ export default function Page() {
 
 			{/* EDUCATION */}
 			<section className="mb-12" id="education">
-				<h2 className="mb-5 text-3xl font-semibold tracking-tighter">
+				<h2 className="sticky top-0 bg-black z-10 mb-5 text-3xl font-semibold tracking-tighter">
 					Education
 				</h2>
 				{education.map((education) => (
