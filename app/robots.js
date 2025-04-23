@@ -1,4 +1,4 @@
-const baseUrl = "https://geekayush.github.io";
+const baseUrl = "https://vastavmeinayush.xyz";
 
 export default function robots() {
 	return {

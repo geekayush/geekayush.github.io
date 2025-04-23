@@ -160,67 +160,73 @@ const volunteerings = [
 const openSourceContributions = [
 	[
 		{
-			name: 'anitaB.org',
-			link: 'https://github.com/anitab-org/mentorship-backend/issues?q=author:geekayush'
+			name: "anitaB.org",
+			link: "https://github.com/anitab-org/mentorship-backend/issues?q=author:geekayush",
 		},
 		{
-			name: 'EvalAI',
-			link: 'https://github.com/Cloud-CV/EvalAI/issues?q=author:geekayush'
+			name: "EvalAI",
+			link: "https://github.com/Cloud-CV/EvalAI/issues?q=author:geekayush",
 		},
 		{
-			name: 'Origami',
-			link: 'https://github.com/Cloud-CV/Origami/issues?q=author:geekayush'
+			name: "Origami",
+			link: "https://github.com/Cloud-CV/Origami/issues?q=author:geekayush",
 		},
 		{
-			name: 'Creative Commons',
-			link: 'https://github.com/cc-archive/cccatalog-frontend/issues?q=author:geekayush'
-		},
-	],
-	[
-		{
-			name: 'Facebook',
-			link: 'https://github.com/facebookarchive/react-360/issues?q=author:geekayush'
-		},
-		{
-			name: 'FOSSASIA',
-			link: 'https://github.com/fossasia/summit.fossasia.org/issues?q=author:geekayush'
-		},
-		{
-			name: 'Material Components',
-			link: 'https://github.com/material-components/material-components-web-react/issues?q=author:geekayush'
+			name: "Creative Commons",
+			link: "https://github.com/cc-archive/cccatalog-frontend/issues?q=author:geekayush",
 		},
 	],
 	[
 		{
-			name: 'Open Climate Fix',
-			link: 'https://github.com/openclimatefix/website/issues?q=author:geekayush'
+			name: "Facebook",
+			link: "https://github.com/facebookarchive/react-360/issues?q=author:geekayush",
 		},
 		{
-			name: 'Open Policy Agent',
-			link: 'https://github.com/open-policy-agent/opa/issues?q=author:geekayush'
+			name: "FOSSASIA",
+			link: "https://github.com/fossasia/summit.fossasia.org/issues?q=author:geekayush",
 		},
 		{
-			name: 'React QueryBuilder',
-			link: 'https://github.com/react-querybuilder/react-querybuilder/issues?q=author:geekayush'
+			name: "Material Components",
+			link: "https://github.com/material-components/material-components-web-react/issues?q=author:geekayush",
+		},
+	],
+	[
+		{
+			name: "Open Climate Fix",
+			link: "https://github.com/openclimatefix/website/issues?q=author:geekayush",
 		},
 		{
-			name: 'Uber',
-			link: 'https://github.com/uber/manifold/issues?q=author:geekayush+'
+			name: "Open Policy Agent",
+			link: "https://github.com/open-policy-agent/opa/issues?q=author:geekayush",
+		},
+		{
+			name: "React QueryBuilder",
+			link: "https://github.com/react-querybuilder/react-querybuilder/issues?q=author:geekayush",
+		},
+		{
+			name: "Uber",
+			link: "https://github.com/uber/manifold/issues?q=author:geekayush+",
 		},
 	],
 ];
 
 const skillSets = [
-	['html', 'css', 'javaScript', 'next.js'],
-	['catalyst', 'express', 'react'],
-	['redux', 'rtl', 'loadable', 'webpack'],
-	['rollup', 'babel', 'docker', 'ci/cd'],
-	['performance optimization', 'design language systems', 'motions', 'ai toolings']
+	["html", "css", "javaScript", "next.js"],
+	["catalyst", "express", "react"],
+	["redux", "rtl", "loadable", "webpack"],
+	["rollup", "babel", "docker", "ci/cd"],
+	[
+		"performance optimization",
+		"design language systems",
+		"motions",
+		"ai toolings",
+	],
 ];
 
 export default function Page() {
 	return (
-		<div>
+		<div className="relative">
+			<div className="progress-bar" />
 			<ConsoleWarning />
 			<section>
 				<h1 className="mb-8 text-5xl font-semibold tracking-tighter">
@@ -254,14 +260,17 @@ export default function Page() {
 			{/* SKILLS */}
 			<section className="mb-12" id="skills">
 				{skillSets.map((skills, setIndex) => (
-					<Marquee 
-						key={`skill-set-${setIndex}`} 
-						speed={25} 
-						direction={setIndex % 2 === 0 ? 'left' : 'right'} 
+					<Marquee
+						key={`skill-set-${setIndex}`}
+						speed={25}
+						direction={setIndex % 2 === 0 ? "left" : "right"}
 						pauseOnHover
 					>
 						{skills.map((skill) => (
-							<p key={skill} className="text-5xl font-bold p-4 text-neutral-400">
+							<p
+								key={skill}
+								className="text-5xl font-bold p-4 text-neutral-400"
+							>
 								{skill}
 							</p>
 						))}
@@ -285,7 +294,7 @@ export default function Page() {
 						href="https://www.youtube.com/live/5yqi6dIEthk?si=jSlV2TINppJ_Ex39&t=13440"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="relative text-xl cursor-pointer w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+						className="relative text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
 					>
 						find the recorded workshop here
 					</a>
@@ -299,10 +308,10 @@ export default function Page() {
 					Open Source Contributions
 				</h2>
 				{openSourceContributions.map((row, rowIndex) => (
-					<Marquee 
+					<Marquee
 						key={`contrib-row-${rowIndex}`}
-						speed={25} 
-						direction={rowIndex % 2 === 0 ? 'left' : 'right'} 
+						speed={25}
+						direction={rowIndex % 2 === 0 ? "left" : "right"}
 						pauseOnHover
 					>
 						{row.map((contrib) => (
@@ -331,7 +340,7 @@ export default function Page() {
 						<div className="flex items-center gap-2">
 							<ArrowIcon />
 							<a
-								className="relative text-xl cursor-pointer w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+								className="relative text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
 								href={experience.companyLink}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -382,7 +391,7 @@ export default function Page() {
 								href={volunteering.link}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="relative text-xl cursor-pointer w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+								className="relative text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
 							>
 								<h3 className="text-xl font-semibold tracking-tighter">
 									{volunteering.name}
@@ -413,8 +422,8 @@ export default function Page() {
 						<div className="flex items-center gap-2">
 							<ArrowIcon />
 							<a
-								className="relative text-xl cursor-pointer w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-								href={project.link}
+						className="relative text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
+						href={project.link}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
