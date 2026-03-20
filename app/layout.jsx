@@ -21,6 +21,27 @@ export const metadata = {
 		siteName: "Ayush | Portfolio",
 		locale: "en_US",
 		type: "website",
+		images: [
+			{
+				url: "/profile.png",
+				width: 512,
+				height: 512,
+				alt: "Ayush Srivastava Profile",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Ayush | Portfolio",
+		description:
+			"I build UIs, fight slow renders, and preach the gospel of dark mode. This is my corner of the internet — part portfolio, all things frontend.",
+		images: ["/profile.png"],
+	},
+	verification: {
+		google: "jTbn6hyqS_OyehoxXsyEwCc6QrgouzoH3OJ8Xis8dec",
+		other: {
+			"msvalidate.01": "8D9030F210D62212E8A83A7766446193",
+		},
 	},
 	robots: {
 		index: true,
