@@ -11,6 +11,7 @@ const ArrowIcon = () => {
 			viewBox="0 0 12 12"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
+			aria-hidden="true"
 		>
 			<path
 				d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
@@ -243,6 +244,7 @@ export default function Page() {
 						width={512}
 						height={512}
 						className="w-full object-cover rounded-xl"
+						priority
 					/>
 				</div>
 				<p className="mb-5 text-base text-justify">
@@ -294,6 +296,7 @@ export default function Page() {
 						href="https://www.youtube.com/live/5yqi6dIEthk?si=jSlV2TINppJ_Ex39&t=13440"
 						target="_blank"
 						rel="noopener noreferrer"
+						aria-label="View recorded workshop on YouTube"
 						className="relative text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
 					>
 						find the recorded workshop here
@@ -320,6 +323,7 @@ export default function Page() {
 								href={contrib.link}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label={`View ${contrib.name} contributions on GitHub`}
 							>
 								<p className="text-5xl font-bold p-4 text-neutral-400">
 									{contrib.name}
@@ -344,6 +348,7 @@ export default function Page() {
 								href={experience.companyLink}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label={`Visit ${experience.company} website`}
 							>
 								<h3 className="text-xl font-semibold tracking-tighter">
 									{experience.company}
@@ -392,6 +397,7 @@ export default function Page() {
 								target="_blank"
 								rel="noopener noreferrer"
 								className="relative text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
+								aria-label={`Visit ${volunteering.name} website`}
 							>
 								<h3 className="text-xl font-semibold tracking-tighter">
 									{volunteering.name}
@@ -426,6 +432,7 @@ export default function Page() {
 						href={project.link}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label={`View ${project.name} project`}
 							>
 								<h3 className="text-xl font-semibold tracking-tighter">
 									{project.name}

@@ -59,6 +59,15 @@ export const metadata = {
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({ children }) {
+	const jsonLd = {
+		"@context": "https://schema.org",
+		"@type": "Person",
+		name: "Ayush Srivastava",
+		jobTitle: "Software Engineer",
+		url: "https://vastavmeinayush.xyz",
+		image: "https://vastavmeinayush.xyz/profile.png",
+	};
+
 	return (
 		<html
 			lang="en"
@@ -69,6 +78,10 @@ export default function RootLayout({ children }) {
 			)}
 		>
 			<body className="antialiased max-w-xl mx-4 mt-8 mx-auto">
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
 				<main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
 					<Navbar />
 					{children}
