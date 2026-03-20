@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
 		<html
 			lang="en"
 			className={cx(
-				"text-black bg-white dark:text-white dark:bg-black lowercase",
+				"text-white bg-black lowercase",
 				GeistSans.variable,
 				GeistMono.variable
 			)}

@@ -18,10 +18,10 @@ function ArrowIcon() {
 export default function Footer() {
 	return (
 		<footer className="mb-16" id="connect">
-			<ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 dark:text-neutral-300">
+			<ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-300">
 				<li className="mb-2">
 					<a
-						className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+						className="flex items-center transition-all hover:text-neutral-100"
 						rel="noopener noreferrer"
 						target="_blank"
 						href="https://github.com/geekayush"
@@ -29,13 +29,13 @@ export default function Footer() {
 						<ArrowIcon />
 						<p className="ml-2 h-7">github</p>
 					</a>
-					<p className="text-sm text-gray-500">
+					<p className="text-sm text-gray-400">
 						occasionally pushing code, mostly pushing myself to code
 					</p>
 				</li>
 				<li className="mb-2">
 					<a
-						className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+						className="flex items-center transition-all hover:text-neutral-100"
 						rel="noopener noreferrer"
 						target="_blank"
 						href="https://www.linkedin.com/in/geekayush/"
@@ -43,13 +43,13 @@ export default function Footer() {
 						<ArrowIcon />
 						<p className="ml-2 h-7">linkedin</p>
 					</a>
-					<p className="text-sm text-gray-500">
+					<p className="text-sm text-gray-400">
 						endorsed for lurking. networking in silent mode
 					</p>
 				</li>
 				<li className="mb-2">
 					<a
-						className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+						className="flex items-center transition-all hover:text-neutral-100"
 						rel="noopener noreferrer"
 						target="_blank"
 						href="https://letterboxd.com/geekayush/"
@@ -60,7 +60,7 @@ export default function Footer() {
 				</li>
 				<li className="mb-2">
 					<a
-						className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+						className="flex items-center transition-all hover:text-neutral-100"
 						rel="noopener noreferrer"
 						target="_blank"
 						href="https://www.instagram.com/vastavmeinayush/"
@@ -71,7 +71,7 @@ export default function Footer() {
 				</li>
 				<li className="mb-2">
 					<a
-						className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+						className="flex items-center transition-all hover:text-neutral-100"
 						rel="noopener noreferrer"
 						target="_blank"
 						href="https://open.spotify.com/user/31h455itoj73uo6nuvwi2yklvria?si=6f10353333ce4b02"
@@ -79,13 +79,13 @@ export default function Footer() {
 						<ArrowIcon />
 						<p className="ml-2 h-7">spotify</p>
 					</a>
-					<p className="text-sm text-gray-500">
+					<p className="text-sm text-gray-400">
 						my code can have bugs, but my playlists don't
 					</p>
 				</li>
 				<li className="mb-2">
 					<a
-						className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+						className="flex items-center transition-all hover:text-neutral-100"
 						rel="noopener noreferrer"
 						target="_blank"
 						href="https://stats.fm/vastavmeinayush"
@@ -93,13 +93,13 @@ export default function Footer() {
 						<ArrowIcon />
 						<p className="ml-2 h-7">stats.fm</p>
 					</a>
-					<p className="text-sm text-gray-500">
+					<p className="text-sm text-gray-400">
 						proof I listened to more music than people last year
 					</p>
 				</li>
 				<li className="mb-2">
 					<a
-						className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+						className="flex items-center transition-all hover:text-neutral-100"
 						rel="noopener noreferrer"
 						target="_blank"
 						href="https://twitter.com/geekayush"
@@ -107,10 +107,10 @@ export default function Footer() {
 						<ArrowIcon />
 						<p className="ml-2 h-7">x</p>
 					</a>
-					<p className="text-sm text-gray-500">tweeting less, thinking more</p>
+					<p className="text-sm text-gray-400">tweeting less, thinking more</p>
 				</li>
 			</ul>
-			<p className="mt-8 text-neutral-600 dark:text-neutral-300">
+			<p className="mt-8 text-neutral-300">
 				© {new Date().getFullYear()} MIT Licensed
 			</p>
 		</footer>

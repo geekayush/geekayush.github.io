@@ -243,6 +243,7 @@ export default function Page() {
 						alt="Ayush Srivastava"
 						width={512}
 						height={512}
+						sizes="(max-width: 768px) 100vw, 512px"
 						className="w-full object-cover rounded-xl"
 						priority
 					/>
@@ -297,12 +298,12 @@ export default function Page() {
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="View recorded workshop on YouTube"
-						className="relative text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
+						className="relative py-2 text-xl cursor-pointer w-fit block hover:text-black transition-colors duration-300 after:block after:content-[''] after:absolute after:z-[-1] after:bottom-0 after:h-[100%] after:bg-white after:w-full after:scale-y-4 after:hover:scale-y-100 after:transition after:duration-300 after:origin-bottom"
 					>
 						find the recorded workshop here
 					</a>
 				</div>
-				<Tweet id="1572883447303254016" />
+				<Tweet />
 			</section>
 
 			{/* OPEN SOURCE CONTRIBUTIONS */}
